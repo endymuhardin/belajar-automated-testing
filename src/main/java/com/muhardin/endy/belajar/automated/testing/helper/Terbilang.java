@@ -22,7 +22,7 @@ public class Terbilang {
             return "nol";
         }
 
-        String hasil = konversi(nilai).trim();
+        String hasil = konversi(nilai).replaceAll("\\s+", " ").trim();
 
         if (negatif) {
             return "minus " + hasil;
